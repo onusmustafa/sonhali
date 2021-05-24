@@ -1,0 +1,106 @@
+.comment{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+    margin-top: 100px;
+    &-text{
+        color: $them-color;
+        font-size: 40px;
+        margin-bottom: 20px;
+        font-family:'Sarpanch', sans-serif;
+
+        }
+
+    &-area{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        &-name{
+            display: flex;
+            font-family:'Sarpanch', sans-serif;
+            flex-direction: column;
+            margin-bottom: 20px;
+            input{
+                border: 1px solid black;
+                border-radius: 10px;
+                margin-top: 15px;
+                width: 200px;
+                font-size: 20px;
+                padding: 20px;
+                border: 1px solid black;
+                background-color:$them-color;
+                font-family:'Sarpanch', sans-serif;
+                color: white;
+                text-align: center;
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+        &-com{
+            display: flex;
+            flex-direction: column;
+            font-family:'Sarpanch', sans-serif;
+            input{
+                border: 1px solid black;
+                border-radius: 10px;
+                padding: 40px;
+                border: 1px solid black;
+                font-family:'Sarpanch', sans-serif;
+                margin-top: 15px;
+                font-size: 20px;
+                background-color:$them-color;
+                color: white;  
+                text-align: center;
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+        &-buttons{
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            button{
+                padding: 15px;
+                width: 100px;
+                border-radius: 15px;
+                border: none;
+                background-color: $them-color;
+                color: white;
+                font-family:'Sarpanch', sans-serif;
+                &:focus{
+                    outline: none;
+                }
+                &:hover{
+                    background-color: white;
+                    transition: 0.3s;
+                    border: 1px solid $them-color;
+                    color: $them-color;
+                }
+            }
+        }
+    }
+    &-here{
+        font-family:'Sarpanch', sans-serif;
+        width: 400px;
+        height: 120px;
+        overflow: scroll;
+        border-radius: 20px;
+        margin-top: 50px;
+        border: 1px solid black;
+        text-align: center;
+        color: $them-color;
+        font-size: 20px;
+        padding: 10px;
+        ul{
+            height: 200px;
+            display: inline;
+            overflow: scroll;
+        }
+
+    }
+}

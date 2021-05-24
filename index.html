@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mustafa Onuş</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sarpanch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/app/scss/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+<!-- Header Start-->
+    <header class="header">
+        
+        <div class="header-menu">
+
+            <ul>
+               <li><a href="index.html">About</a></li>
+               <li><a href="#comment">Comment</a></li>
+               <li><a href="#portfolio">Portfolio</a></li>
+               <li><a href="#contact">Contact</a></li>
+
+            </ul>
+        </div>
+        <div class="header-hamburger">
+            <img src="/img/hamburger.svg" alt="" onclick="myFunction()" class="dropbtn">
+            <div id="myDropdown" class="header-hamburger-dropdown-content">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+              </div>
+        </div>
+        
+    </header>
+<!-- Header End-->
+
+
+<!-- Banner Start-->
+<section  class="banner">
+    <div class="banner-img">
+        <img src="/img/banner-image.png" alt="" width="300px">
+    </div>
+    <div class="banner-name">
+        <div class="banner-name-img">
+        <img src="/img/background.svg" alt="" width="356px">
+
+        </div>
+        <div class="banner-name-text">
+         <h1>Hello, <br>
+            I'm Mustafa Onuş    <br>
+            Front End Developer</h1>
+        </div>
+    
+    
+
+    </div>
+
+
+</section>
+
+<section class="banner2">
+
+
+    <div class="banner2-alan">
+        <div class="banner2-alan-text">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, repellendus? Tempora nihil laudantium sint ea explicabo. Quisquam id laboriosam corrupti, architecto ea quo saepe enim tempora eius magnam pariatur ducimus?
+            Nihil sapiente fuga consectetur molestiae repudiandae rerum velit, ea harum. Earum natus voluptatum nostrum, maxime deleniti illo eveniet pariatur similique, ipsa quibusdam assumenda molestias expedita, non perferendis necessitatibus nobis repudiandae.
+            Repudiandae nulla totam.</span>
+        </div>
+        <div class="banner2-alan-button">
+            <a href="https://www.kariyer.net/profil" target="_blank">Download CV</a>
+        </div> 
+    </div>
+</section>
+
+<section class="banner3">
+
+    <div class="banner3-text">
+        <h2>SERVICES OFFERS</h2>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, quibusdam.</span>
+    <div class="banner3-box">
+        <div class="banner3-box-box1">
+            <img src="/img/footer-icon/rocket.svg" alt="">
+           UI / UX Design
+        </div>
+        <div class="banner3-box-box2">
+            <img src="/img/footer-icon/world.svg" alt="" width="60px"
+            height="60px"> SEO
+        </div>
+        <div class="banner3-box-box3">
+            <img src="/img/footer-icon/paint.svg" alt="" width="60px"
+            height="60px"> Web Design
+        </div>
+    </div>
+
+
+</section>
+
+
+
+<!-- Banner End-->
+<!-- Comment Start-->
+
+<div id="comment" class="comment">
+
+    <div class="comment-text">
+        <span>Say Something</span>
+    </div>
+    <div class="comment-area">
+    
+        <div class="comment-area-name">
+            <span>Name</span>
+            <input type="text"  id="name">
+        </div>
+    
+        <div class="comment-area-com">
+            <span>Comment</span>
+            <input type="text" id="comment"> 
+        </div>
+    
+        <div class="comment-area-buttons">
+            <button onclick="add()">Submit</button>
+            <button onclick="location.reload()">Clear</button>
+        </div>
+        <div class="comment-here" >
+            <ul class="list"></ul>
+        </div>
+
+    </div>
+
+    
+</div>
+
+
+
+
+<!-- Comment End-->
+<!-- Portfolio  Start-->
+<div class="container">
+    <div class="row d-flex justify-content-center mt-lg-5">
+        <p class="tittle">Portfolio</p>
+        <div class="col-md-8 ">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/img/1.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/2.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/3.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+
+    </div>
+</div>
+<!-- Portfolio  End-->
+<!-- Footer  Start-->
+
+<footer id="contact"class="footer">
+    <div class="footer-links-col1">
+      <a href="#">About</a>
+      <a href="#">Comment</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Contact</a>
+
+    </div>
+    <div class="footer-links-col1">
+        <a href="#">Education</a>
+        <a href="#">Design</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+    </div>
+    <div class="footer-links-col3">
+        <div class="footer-social">
+            <a href="https://www.instagram.com/onusmustafa/" target="_blank"><img src="/img/footer-icon/instagram.svg" alt="instagram"></a>
+            <a href="https://github.com/onusmustafa" target="_blank"><img src="/img/footer-icon/github.svg" alt="github"></a>
+            <a href="https://twitter.com/onus1304"target="_blank"><img src="/img/footer-icon/twitter.svg" alt="twitter"></a>
+            <a href="https://www.facebook.com/onusmustafa"target="_blank"><img src="/img/footer-icon/facebook.svg" alt="facebook"></a>
+
+
+        </div>
+        <br>
+        <div class="footer-phone">
+            <img src="/img/footer-icon/phone.svg" alt="">
+            <a href="#">+9 0506 186 04 65</a>
+        </div>
+        <div class="footer-mail">
+            <img src="/img/footer-icon/mail.svg" alt="">
+            <a href="#">onus.mustafa13@gmail.com</a>
+        </div>
+
+    </div>
+</footer>
+<!-- Footer  End-->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <script src="/app/js/script.js">
+
+    </script>
+    <script>    $('.scrollTo').click(function(){
+        var getElement = $(this).attr('href');
+        if($(getElement).length){
+            var getOffset =$(getElement).offset().top;
+            $('html,body').animate({
+                    scrollTop:getOffset
+            },500);
+        }
+        return false;
+    });</script>
+
+</body>
+</html>
